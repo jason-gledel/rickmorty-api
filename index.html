@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+
+  
+        <header>
+
+            <div id="logo" href="index.html">
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="logo" height="51px" width="165px">
+                    <p>wiki</p>
+                </a>
+            </div>
+            
+            <nav>
+                <form id="searchForm">
+                    <div class="input-container">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" id="searchInput" name="searchQuery" placeholder="Rechercher un personnage">
+                        <i class="bx bx-x" id="clearIcon" style="display: none;"></i>
+                        <div id="noResultMessage" style="display: none;">
+                            <div id="rickSearch"></div>
+                            <p>J-j'ai pas de rr-résultat avec ça M-m-morty *Burp*</p>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </form>
+                <ul class="nav-menu">
+                    <li class="nav-item"><button id="charactersBtnMobile">Personnages</button></li>
+                    <li class="nav-item"><button id="episodesBtnMobile">Épisodes</button></li>
+                    <li class="nav-item"><button id="locationsBtnMobile">Lieux</button></li>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="contentRick">
+        <div class="sidecontainer">
+            <div class="sidebar">
+
+                <button id="charactersBtn">Personnages</button>
+                <button id="episodesBtn">Épisodes</button>
+                <button id="locationsBtn">Lieux</button>
+                
+                <!-- Add more dropdowns as needed -->
+            </div>
+        </div>
+        <main>
+            <section id="characterList"></section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
